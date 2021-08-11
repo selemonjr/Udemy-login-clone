@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.header {
+    background-color: black;
+    text-align: center;
+}
+
+
+.header ul {
+    display: inline-flex;
+    margin: 15px;
+    list-style: none;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding: 5px;
+}
+
+
+.header ul li {
+    width: 180px;
+    padding: 10px;
+    margin:10px;
+
+}
+
+.active, .header ul li:hover {
+    background-color: rgb(180, 13, 13);
+    border-radius: 10px;
+}
+
+.header ul li a::after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    background-color: rgb(16, 211, 16);
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: width 0.5s;
+}
+
+.header ul li a:hover::after {
+    width: 100%;
+}
+
+.submenu {
+    display: none;
+}
+
+h1 {
+    color: white;
+    padding: 30px;
+    font-size: 50px;
+    margin-left: 10%;
+}
+
+.dreams {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+.header ul li:hover .submenu {
+    display: block;
+    background: black;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -15px;
+}
+
+.submenu ul {
+    display: block;
+}
+
+.submenu ul li {
+    text-align: left;
+    width: 150px;
+    padding: 10px;
+}
+
+.submenu1 {
+    display: none;
+}
+
+.submenu ul li:hover .submenu1 {
+    display: block;
+    background: black;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 110px;
+    width: 150px;
+}
+
+.submenu1 ul {
+    display: block;
+}
+
+.submenu3{
+    display: none;
+}
+
+.submenu1 ul li:hover .submenu3 {
+    display: block;
+    background: black;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 110px;
+}
+
+.submenu5{
+    display: none;
+}
+
+.submenu5 ul {
+    display: block;
+}
+
+.submenu ul li:hover .submenu5 {
+    display: block;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 150px;
+    width: 200px;
+}
+.submenu6 {
+    display: none;
+}
+
+.submenu6 ul {
+    display: block;
+}
+
+.submenu ul li:hover .submenu6 {
+    display: block;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 150px;
+    width: 200px;
+}
+
+
+.submenu7 {
+    display: none;
+}
+
+.submenu7 ul {
+    display: block;
+}
+
+.submenu ul li:hover .submenu7 {
+    display: block;
+    background: transparent;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 150px;
+    width: 200px;
+}
+
+h3 {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 1%;
+    margin-left: 6%;
+}
+
+input {
+    display: block;
+    margin-left: 36%;
+    padding: 1%;
+    margin-bottom: 20px;
+    padding-left: 1%;
+    padding-right: 20%;
+    border-radius: 5px;
+    border: 1px solid black;
+  
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+    padding-top: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.log {
+    text-align: center;
+    padding-right: 120px;
+    padding-left:140px;
+    margin-top: 1%;
+    background-color: rgb(207, 26, 207);
+    color: white;
+    border: 1px solid pink;
+    cursor: pointer;
+}
+p {
+    text-align: center;
+    margin-left: 5%;
+}
+.ending {
+    background: black;
+    margin-top: 5%;
+}
+
+.follow {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-left: 5%;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20%;
+    margin-left: 5%;
+}
+
+.icons a {
+    text-decoration: none;
+    font-size: 50px;
+    margin:20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-position: 0% 5%;
+    background-size: 100% 200%;
+    transition: background-position 0.5s, color 0.5s;
+}
+
+
+.icons a:nth-child(1) {
+    color: #1976d3;
+    background-image: linear-gradient(#fff,50%,#1976d3 50%);
+}
+
+.icons a:nth-child(2) {
+    color: #03a9f5;
+    background-image: linear-gradient(#fff,50%,#03a9f5 50%);
+}
+
+.icons a:nth-child(3) {
+    color:  #f44236;
+    background-image: linear-gradient(#fff,50%, #f44236 50%);
+}
+
+
+
+.icons a:hover {
+    background-position: 0% 100%;
+    color: white;
+}
+
+
